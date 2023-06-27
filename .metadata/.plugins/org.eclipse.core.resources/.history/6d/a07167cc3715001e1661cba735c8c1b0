@@ -1,0 +1,23 @@
+package empresa;
+
+import java.util.Scanner;
+
+public class IMC {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner (System.in);
+		
+		System.out.print("Digite seu peso: ");
+		int peso = teclado.nextInt();
+		
+		System.out.print("Digite sua altura: ");
+		double altura = teclado.nextDouble();
+		
+		if (peso <= 0 || altura <= 0) {
+		System.out.println("Informe valores positivos: ");
+		
+	}
+		double imc = peso / (altura * altura);
+
+}
+}
